@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-color: black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100svh;
+  gap: 1rem;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+}
+
+.allThings {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 40%;
+  height: 100%;
+}
+
+#yourSite {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0.25rem 0 0.25rem 0.5rem;
+}
+
+#yourSite::placeholder {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  opacity: 50%;
+  font-style: italic;
+}
+
+label {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.qrCodeBox {
+  display: flex;
+  background-color: white;
+  height: 60%;
+}
+
+.newQRCode {
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  padding: 0.25rem 0 0.25rem 0;
+  width: 50%;
+  align-self: center;
+  margin: 0;
+}
+
+.qrCode {
+  padding: 0.5rem;
+}
