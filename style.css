@@ -23,6 +23,7 @@ h1 {
   gap: 1.5rem;
   width: 40%;
   height: 100%;
+  justify-content: center;
 }
 
 #yourSite {
@@ -49,9 +50,10 @@ label {
 }
 
 .qrCodeBox {
-  display: flex;
-  background-color: white;
+  display: none;
   height: 60%;
+  justify-content: center;
+  align-items: center;
 }
 
 .newQRCode {
@@ -63,9 +65,87 @@ label {
   padding: 0.25rem 0 0.25rem 0;
   width: 50%;
   align-self: center;
-  margin: 0;
+  margin: 1rem 0 0 0;
 }
 
 .qrCode {
-  padding: 0.5rem;
+  height: 100%;
+}
+
+.newDownload {
+  display: none;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  align-self: center;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  text-decoration: none;
+}
+
+.newDownload:hover {
+  opacity: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .allThings {
+    width: 80%;
+  }
+
+  .newQRCode {
+    width: 70%;
+  }
+
+  .qrCodeBox {
+    height: 50%;
+  }
+
+  image {
+    height: 85%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  label {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .allThings {
+    width: 80%;
+  }
+
+  .newQRCode {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  .qrCodeBox {
+    height: 50%;
+  }
+
+  image {
+    height: 85%;
+  }
+
+  #yourSite {
+    font-size: 1.75rem;
+  }
+
+  #yourSite::placeholder {
+    font-size: 1.75rem;
+  }
+
+  .newDownload {
+    font-size: 2rem;
+  }
+
 }

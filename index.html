@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Générateur QRcode</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Générateur QRcode</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon/fav-qrcode.png"/>
 </head>
 <body>
 <h1>Générateur Qr code</h1>
 <div class="allThings">
-  <label for="yourSite">Le lien de votre site :</label>
-  <input type="text" id="yourSite" name="yourSite" placeholder="Le lien">
-  <div class="qrCodeBox">
-    <img alt="" src="" class="qrCode">
-  </div>
-  <button type="button" class="newQRCode">Créez votre QR code</button>
+    <label for="yourSite">Le lien de votre page :</label>
+    <input type="text" id="yourSite" name="yourSite" placeholder="Le lien">
+    <div class="qrCodeBox">
+        <img alt="" src="" class="qrCode">
+    </div>
+    <button type="button" class="newQRCode">Créez votre QR code</button>
+    <a href="" class="newDownload" download>Télécharger</a>
 </div>
 </body>
 
-<script type="text/javascript" src="main.js"></script>
+<script type="module" src="main.js"></script>
 </html>
